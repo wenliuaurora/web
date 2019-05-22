@@ -1,0 +1,11 @@
+<%- include('header') %>
+
+    <%videos.forEach(function (video) { %>
+        <h4 class="ui horizontal divider header"><i class="tag icon"></i> video </h4>
+        <a href="video/<%=video.videoId%>" class="ui large image">
+            <img  src="coverImage/<%= video.coverImage %>">
+        </a>
+
+<%})%>
+
+<%- include('footer') %>

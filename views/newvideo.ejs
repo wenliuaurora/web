@@ -1,0 +1,36 @@
+<%- include('header') %>
+
+<div class="ui grid">
+    <div class="four wide column"></div>
+    <div class="eight wide column">
+        <form class="ui form segment" method="post" enctype="multipart/form-data">
+            <div class="field required">
+                <label>视频名称</label>
+                <input type="text" name="videoName">
+            </div>
+            <div class="field required">
+                <label>视频</label>
+                <input type="file" name="video">
+            </div>
+            <div class="field required">
+                <label>类别</label>
+                <select class="ui compact selection dropdown" name="category">
+                    <option value="animation">男</option>
+                </select>
+            </div>
+            <div class="field required">
+                <label>视频简介</label>
+                <textarea name="description" rows="5"></textarea>
+            </div>
+            <div class="field required">
+                <label>封面</label>
+                <input type="file" name="coverImage">
+            </div>
+            <input type="submit" class="ui button fluid" value="注册">
+        </form>
+    </div>
+</div>
+
+
+
+<%- include('footer') %>
